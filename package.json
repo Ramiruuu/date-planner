@@ -1,0 +1,14 @@
+{
+    "name": "date-planner",
+    "version": "1.0.0",
+    "description": "A date planner with email functionality",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "dotenv": "^16.4.7",
+        "express": "^4.17.1",
+        "nodemailer": "^6.9.1"
+    }
+}

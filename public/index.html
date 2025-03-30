@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Planner with Email</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Date Planner Email Scheduler</h2>
+    <form id="plannerForm">
+        <div class="form-group">
+            <label for="username">Your Gmail Username:</label>
+            <input type="text" id="username" required placeholder="e.g., john.doe">
+        </div>
+        <div class="form-group">
+            <label for="recipient">Send Invitation To (Email):</label>
+            <input type="email" id="recipient" required>
+        </div>
+        <div class="form-group">
+            <label for="subject">Event Subject:</label>
+            <input type="text" id="subject" required>
+        </div>
+        <div class="form-group">
+            <label for="date">Event Date:</label>
+            <input type="date" id="date" required>
+        </div>
+        <div class="form-group">
+            <label for="time">Event Time:</label>
+            <input type="time" id="time" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Event Details:</label>
+            <textarea id="message" rows="4" required></textarea>
+        </div>
+        <button type="submit">Send Invitation</button>
+    </form>
+    <div id="status"></div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
